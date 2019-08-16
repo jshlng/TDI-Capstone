@@ -22,7 +22,9 @@ Machine Learning Model
 
 The price prediction tool is build upon three linear regression models, one for each city. The features used in the Boston model and the San Francisco model are below:
 
-The features used in the New York City model are below.
+'zipcode', 'property_type', 'room_type', 'accommodates', 'bathrooms', 'bedrooms', 'beds', 'bed_type'
+
+In addition to these 8 features, the 12 most common amenities are included in the features for the New York City model, for a total of 20 features.
 
 Comparison between linear, ridge, and lasso linear regression model metrics.
 
