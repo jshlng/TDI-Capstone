@@ -9,8 +9,8 @@ From a big picture standpoint, this project will aid in overall pricing efficien
 Data for this project was sourced from insideairbnb.com. Inside Airbnb is an independent, third-party website that provides publicly available data from airbnb listings around the world. In particular, the project focuses on building a pricing tool for listings in Boston, New York City, and San Francisco. Inside Airbnb provides snapshots of airbnb listings in each of those geographies. The data used in this project was from July 2019 snapshots of each city.
 
 Boston data: http://data.insideairbnb.com/united-states/ma/boston/2019-07-14/data/listings.csv.gz
-New York City data: http://data.insideairbnb.com/united-states/ny/new-york-city/2019-07-08/data/listings.csv.gz
-San Francisco data: http://data.insideairbnb.com/united-states/ca/san-francisco/2019-07-08/data/listings.csv.gz
+\nNew York City data: http://data.insideairbnb.com/united-states/ny/new-york-city/2019-07-08/data/listings.csv.gz
+\nSan Francisco data: http://data.insideairbnb.com/united-states/ca/san-francisco/2019-07-08/data/listings.csv.gz
 
 The majority of the independent data ingestion work for the project was in the feature selection and processing. Since the business objective is to inform potential hosts of pricing information, the selected features are information about the listing available before it is put on the market. This excludes information from reviews or other feedback that will have strong predictive power in determining the price. Additionally, the number of features was carefully selected because of the size of that data sets in each city. For Boston and San Francisco, there are approximately 5000 listings, while in New York City there are 45000. To build a linear regression model from this amount of data, 8 features were selected for the cities with 5000 data points, while 20 features were selected for NYC since the amount of data could support a model of that complexity.
 
