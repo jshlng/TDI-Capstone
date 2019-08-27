@@ -19,6 +19,9 @@ The majority of the independent data ingestion work for the project was in the f
 Key figures 1 and 2
 
 1: $ per feature from the linear regression
+
+![Plot 1](https://github.com/jshlng/TDI-Capstone/blob/master/AmenitiesPlot.png)
+
 2: Machine learning metrics comparing various linear regression methods
 
 # Machine Learning and Interactive Website
