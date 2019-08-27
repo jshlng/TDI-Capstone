@@ -20,7 +20,7 @@ Key figures 1 and 2
 
 1: $ per feature from the linear regression
 
-![Plot 1](https://github.com/jshlng/TDI-Capstone/blob/master/AmenitiesPlot.png)
+![Amenities Plot](https://github.com/jshlng/TDI-Capstone/blob/master/AmenitiesPlot.png)
 
 2: Machine learning metrics comparing various linear regression methods
 
