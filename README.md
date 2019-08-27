@@ -16,13 +16,14 @@ The majority of the independent data ingestion work for the project was in the f
 
 # Visualizations
 
-Key figures 1 and 2
-
-1: $ per feature from the linear regression
+The first plot shows the calculated average dollar value for each of 21 different amenities listed on Airbnb. This was calculated by averaging the coefficients corresponding to a particular amenitity from the linear model of each city. The amenities are listed in order of decreasing value.
 
 ![Amenities Plot](https://github.com/jshlng/TDI-Capstone/blob/master/AmenitiesPlot.png)
 
+As you can see on the plot, the most valuable amenity is a gym, which on average increases the price of an airbnb by $136 compared to an airbnb without a gym, assuming everything else stays constant. It's important to note, however, that these features are not indpenedent. For example, having a gym in an airbnb likely means the property is in a larger building, also increasing the likelyhood of there being an elevator. Since these features often co-present, the model is not able to tease out how much the increase in value is from the gym or the elevator in isolation from each other. This interplay between features can also help explain why the least valuable amenities have a negative dollar value according to the linear model. In complete isolation, having dishes and silverware available in an airbnb will not reduce the price by $56. However, dishes and silverware as an amenity may be correlated with a particular zipcode, or property-type, or maybe just correlated with fewer expensive amenities so the model calculates a negative coefficient for that feature. 
+
 2: Machine learning metrics comparing various linear regression methods
+
 
 # Machine Learning and Interactive Website
 Machine Learning Model
