@@ -69,11 +69,5 @@ Additionally, three different regression methods were used: linear regression, r
 
 The ridge and lasso regression algorithms perform slightly better than the linear model across all three cities. The 2nd feature set performs slightly better than the 1st feature set in NYC and SF, but performs slightly worse in Boston. Comparing models across cities, NYC models are better than the Boston models, which are better than the SF models.
 
-## Website
-
-A website that will predict the price of a new airbnb listing given a set of feature inputs is deployed via heroku below.
-
-link to heroku website
-
 # Deliverable
-Github repo and heroku/flask website.
+Github repo and readme with data visualizations.
