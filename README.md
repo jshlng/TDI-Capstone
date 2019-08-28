@@ -24,10 +24,10 @@ As you can see on the plot, the most valuable amenity is a gym, which on average
 
 I've also put the coefficients for each zipcode in each city on a map, and created a google map with gradient labelled markers to visualize the data.
 
-See links to each google map below:
-Boston Map: https://drive.google.com/open?id=1kt4_j-qRS3QgmAITRrr0IkxeKY-c0hii&usp=sharing 
-NYC Map: https://drive.google.com/open?id=1DQ4r6nTX6n4p-6Z6QfQ9bJC-OksR4ZrN&usp=sharing
-SF Map: https://drive.google.com/open?id=1IUmKSRKL2hq5ZWpnsrDbbZaMgkBv3raF&usp=sharing
+See links to each google map below:  
+Boston Map: https://drive.google.com/open?id=1kt4_j-qRS3QgmAITRrr0IkxeKY-c0hii&usp=sharing  
+NYC Map: https://drive.google.com/open?id=1DQ4r6nTX6n4p-6Z6QfQ9bJC-OksR4ZrN&usp=sharing  
+SF Map: https://drive.google.com/open?id=1IUmKSRKL2hq5ZWpnsrDbbZaMgkBv3raF&usp=sharing  
 
 ## Boston
 ![Amenities Plot](https://github.com/jshlng/TDI-Capstone/blob/master/BostonZipcodeCoefficientsMap.png)
