@@ -59,7 +59,7 @@ Two sets of features were used to train the models. The first set is only 8 basi
 
 Additionally, three different regression methods were used: linear regression, ridge regression, and lasso regression. The mean standard error was used to determine the best model. The mean standard error is the average difference between the predicted price and the true price of each listing. This type of error is perfect for price prediction because it weighs a $20 error in price exactly twice as much as a $10 error, and reduces the effect of outliers on the model.
 
-### Mean Standard Error for Linear Regression Models:
+### Mean Standard Errors for Each Regression Model:
 
   Regression Model | Boston (-Amn) | Boston (+Amn) | NYC (-Amn) | NYC (+Amn) | SF (-Amn) | SF (+Amn) |
  ---------- | ---------- |---------- |---------- |---------- |---------- |---------- |
@@ -67,8 +67,13 @@ Additionally, three different regression methods were used: linear regression, r
  Ridge | 88.78 | 89.41 | 72.83 | 72.45 | 97.51 | 96.52 |
  Lasso | 88.74 | 89.48 | 72.92 | 72.71 | 97.87 | 96.72 |
 
+The ridge and lasso regression algorithms perform slightly better than the linear model across all three cities. The 2nd feature set performs slightly better than the 1st feature set in NYC and SF, but performs slightly worse in Boston. Comparing models across cities, NYC models are better than the Boston models, which are better than the SF models.
 
-Website via heroku/flask.
+## Website
+
+A website that will predict the price of a new airbnb listing given a set of feature inputs is deployed via heroku below.
+
+link to heroku website
 
 # Deliverable
 Github repo and heroku/flask website.
