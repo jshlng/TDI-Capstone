@@ -12,7 +12,9 @@ Boston data: http://data.insideairbnb.com/united-states/ma/boston/2019-07-14/dat
 New York City data: http://data.insideairbnb.com/united-states/ny/new-york-city/2019-07-08/data/listings.csv.gz  
 San Francisco data: http://data.insideairbnb.com/united-states/ca/san-francisco/2019-07-08/data/listings.csv.gz
 
-The majority of the independent data ingestion work for the project was in the feature selection and processing. Since the business objective is to inform potential hosts of pricing information, the selected features are information about the listing available before it is put on the market. This excludes information from reviews or other feedback that will have strong predictive power in determining the price. Additionally, the number of features was carefully selected because of the size of that data sets in each city. For Boston and San Francisco, there are approximately 5000 listings, while in New York City there are 45000. To build a linear regression model from this amount of data, 8 features were selected for the cities with 5000 data points, while 20 features were selected for NYC since the amount of data could support a model of that complexity.
+The majority of the independent data ingestion work for the project was in the feature selection and processing. Since the business objective is to inform potential hosts of pricing information, the selected features are information about the listing available before it is put on the market. This excludes information from reviews or other feedback that will have strong predictive power in determining the price.
+
+Details of the data cleaning and feature selection process can be found in the code for the machine learning model, ml_model.py.
 
 # Visualizations
 
@@ -40,13 +42,17 @@ SF Map: https://drive.google.com/open?id=1IUmKSRKL2hq5ZWpnsrDbbZaMgkBv3raF&usp=s
 
 
 # Machine Learning and Interactive Website
-Machine Learning Model
 
-The price prediction tool is build upon three linear regression models, one for each city. The features used in the Boston model and the San Francisco model are below:
+### Machine Learning Model
 
-'zipcode', 'property_type', 'room_type', 'accommodates', 'bathrooms', 'bedrooms', 'beds', 'bed_type'
+The price prediction tool is build upon three linear regression models, one for each city. For Boston and San Francisco, there are approximately 5000 listings, while in New York City there are ~45000. To build a linear regression model from this amount of data, I compared two different linear regression models. The first was build using only a basic set of 8 features, while the second was built including a feature set of 21 of the most common amenities for airbnbs (in addition to the base set of 8 basic features).
 
-In addition to these 8 features, the 12 most common amenities are included in the features for the New York City model, for a total of 20 features.
+The 8 basic features are as follows: 
+* 4 numerical features: 'accommodates', 'bathrooms', 'bedrooms', 'beds'
+* 4 categorical features: 'zipcode', 'property_type', 'room_type', 'bed_type'
+
+The 21 common amenities are:
+*'Self check-in', 'Microwave', 'Stove', 'Dishes and silverware', 'Coffee maker', 'Oven', 'Cable TV', 'Cooking basics', 'Family/kid friendly', 'Dishwasher', 'Free street parking', 'Elevator', 'Luggage dropoff allowed', 'Private entrance', 'Free parking on premises', 'No stairs or steps to enter', 'Private living room','Pets allowed', 'Gym', 'Patio or balcony', '24-hour check-in'
 
 Comparison between linear, ridge, and lasso linear regression model metrics.
 
