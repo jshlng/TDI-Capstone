@@ -61,11 +61,11 @@ Additionally, three different regression methods were used: linear regression, r
 
 ### Mean Standard Error for Linear Regression Models:
 
-  Boston | New York | San Francisco
--------- | -------- | --------
- 88.94 | 73.78 | 98.48
- 89.72 | 73.77 | 97.14  
-
+  Regression Model | Boston (-Amn) | Boston (+Amn) | NYC (-Amn) | NYC (+Amn) | SF (-Amn) | SF (+Amn) |
+ ---------- | ---------- |---------- |---------- |---------- |---------- |---------- |
+ Linear | 88.94 | 89.72 | 73.78 | 73.77 | 98.48 | 97.14 |
+ Ridge | 88.78 | 89.41 | 72.83 | 72.45 | 97.51 | 96.52 |
+ Lasso | 88.74 | 89.48 | 72.92 | 72.71 | 97.87 | 96.72 |
 
 
 Website via heroku/flask.
