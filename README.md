@@ -42,7 +42,7 @@ SF: https://drive.google.com/open?id=1IUmKSRKL2hq5ZWpnsrDbbZaMgkBv3raF&usp=shari
 ![SF Zipcodes Snapshot](https://github.com/jshlng/TDI-Capstone/blob/master/SFZipcodeCoefficientsMap.png)
 
 
-# Machine Learning and Interactive Website
+# Machine Learning Model and Metrics
 
 ### Machine Learning Model
 
