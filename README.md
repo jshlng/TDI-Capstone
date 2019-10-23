@@ -46,7 +46,7 @@ SF: https://drive.google.com/open?id=1IUmKSRKL2hq5ZWpnsrDbbZaMgkBv3raF&usp=shari
 
 ### Machine Learning Model
 
-The price prediction tool is built using three linear regression models, one for each city. The training data for Boston and San Francisco had approximately 5000 listings each, while the training data for New York City had ~45000. 
+The price prediction tool is built using three linear regression models, one for each city. The training data for Boston and San Francisco had approximately 5000 listings each, while the training data for New York City had ~45000. After data cleaning, the SF data set has 3692 listings, the Boston data set has 5182 listings, and the NYC data set has 31736 listings.
 
 Two sets of features were used to train the models. The first set is only 8 basic features, while the second set adds 21 of the most commmon amenities listed on airbnbs on top of the basic features from the first set.
 
@@ -67,7 +67,7 @@ Additionally, three different regression methods were used: linear regression, r
  Ridge | 88.78 | 89.41 | 72.83 | 72.45 | 97.51 | 96.52 |
  Lasso | 88.74 | 89.48 | 72.92 | 72.71 | 97.87 | 96.72 |
 
-The ridge and lasso regression algorithms perform slightly better than the linear model across all three cities. The 2nd feature set performs slightly better than the 1st feature set in NYC and SF, but performs slightly worse in Boston. Comparing models across cities, NYC models are better than the Boston models, which are better than the SF models.
+The ridge and lasso regression algorithms perform slightly better than the linear model across all three cities. The 2nd feature set performs slightly better than the 1st feature set in NYC and SF, but performs slightly worse in Boston. Comparing models across cities, NYC models are better than the Boston models, which are better than the SF models. This is unsurprising given the number of cleaned data points in each data set (NYC with 31736, Boston with 5182, and SF with 3692).
 
 # Deliverable
 Github repo and readme with data visualizations.
